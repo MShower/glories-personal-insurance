@@ -3,15 +3,17 @@
 	"id": "glories-personal-insurance",
 	"version": "${version}",
 	"name": "Glorie's Personal Insurance",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Enhance gaming experience.",
 	"authors": [
-		"Me!"
+		"MeteorOfTime",
+        "Haoyue1013",
+        "Glorie_"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/glories-personal-insurance/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,7 +22,10 @@
 		],
 		"fabric-datagen": [
 			"mshower.insurance.GloriesPersonalInsuranceDataGenerator"
-		]
+		],
+        "client": [
+            "mshower.insurance.GloriesPersonalInsuranceClient"
+        ]
 	},
 	"mixins": [
 		"glories-personal-insurance.mixins.json"
