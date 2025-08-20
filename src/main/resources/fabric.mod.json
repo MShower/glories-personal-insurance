@@ -10,9 +10,17 @@
         "Glorie_"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "gpi.meteorsland.eu.org",
+		"sources": "https://github.com/MShower/glories-personal-insurance",
+        "issues": "https://github.com/MShower/glories-personal-insurance/issues"
 	},
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.discord": "https://discord.gg/PkWbyceEyd"
+            }
+        }
+    },
 	"license": "MIT",
 	"icon": "icon.png",
 	"environment": "*",
@@ -37,6 +45,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"create": "*"
 	}
 }
