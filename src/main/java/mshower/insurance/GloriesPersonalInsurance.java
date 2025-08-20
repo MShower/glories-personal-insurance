@@ -21,6 +21,7 @@ public class GloriesPersonalInsurance implements ModInitializer {
 
         LOGGER.info("I just bought new insurance.");
         AllItems.registerItems();
+        AllBlocks.registerBlocks();
         AllItemGroups.registerGroups();
     }
 }

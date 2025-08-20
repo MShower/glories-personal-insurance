@@ -2,5 +2,6 @@
     "item.glories-personal-insurance.raw_tin": "Raw Tin",
     "item.glories-personal-insurance.tin_ingot": "Tin Ingot",
     "item.glories-personal-insurance.tin_nugget": "Tin Nugget",
+    "block.glories-personal-insurance.tin_block": "Tin Block",
     "ItemGroup.insurance_group": "Glorie's Personal Insurance"
 }
