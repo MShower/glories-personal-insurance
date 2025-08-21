@@ -21,11 +21,14 @@ public class BlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(AllBlocks.TIN_BLOCK)
                 .add(AllBlocks.RAW_TIN_BLOCK)
                 .add(AllBlocks.TIN_ORE)
-                .add(AllBlocks.DEEPSLATE_TIN_ORE);
+                .add(AllBlocks.DEEPSLATE_TIN_ORE)
+                .add(AllBlocks.BRONZE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(AllBlocks.TIN_BLOCK)
                 .add(AllBlocks.TIN_ORE)
                 .add(AllBlocks.DEEPSLATE_TIN_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(AllBlocks.BRONZE_BLOCK);
     }
 }

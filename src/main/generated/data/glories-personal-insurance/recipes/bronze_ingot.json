@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "glories-personal-insurance:tin_nugget"
+    },
+    "$": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "#$",
+    "$#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "glories-personal-insurance:bronze_ingot"
+  },
+  "show_notification": true
+}

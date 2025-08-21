@@ -12,6 +12,9 @@ public class AllItems {
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new Item.Settings()));
+    public static final Item TIN_FOIL = registerItem("tin_foil", new Item(new Item.Settings()));
+    public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
+
 
     public static Item registerItem(String id, Item item) {
         return register(new Identifier(GloriesPersonalInsurance.MOD_ID, id), item);

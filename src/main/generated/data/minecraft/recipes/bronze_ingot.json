@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "glories-personal-insurance:bronze_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "glories-personal-insurance:bronze_ingot"
+  }
+}

@@ -1,16 +1,21 @@
-// 1.20.1	2025-08-21T13:36:11.217099	Glorie's Personal Insurance/Model Definitions
+// 1.20.1	2025-08-21T15:22:27.7129956	Glorie's Personal Insurance/Model Definitions
 c0305bfca413be16612dc204833206d0fc4a8a59 assets\glories-personal-insurance\models\block\deepslate_tin_ore.json
 de48db215795d0b31bebd7eff017f848c32c50c9 assets\glories-personal-insurance\models\block\raw_tin_block.json
 dcb9cd8a8ee3c744ba32aa9ac80c080c36eef5ef assets\glories-personal-insurance\models\block\tin_block.json
 6d5f364b1b197c153a13467a053cd61202553138 assets\glories-personal-insurance\models\item\deepslate_tin_ore.json
 8f41ea3ba716e69af1a8859f7e38d741861ea433 assets\glories-personal-insurance\blockstates\deepslate_tin_ore.json
 30d5b695db3c4ec0505cc6c223418bd12faa32c0 assets\glories-personal-insurance\models\item\tin_ore.json
+3e49570b1c6bf2aeb41293a253ac783a170d74fb assets\glories-personal-insurance\models\block\bronze_block.json
 acd2696899a5c452a5042559a3d8e5db83dde5ee assets\glories-personal-insurance\blockstates\raw_tin_block.json
 a3aad2f3a24b6513410d6caa7cc764e6c3b06fad assets\glories-personal-insurance\models\item\tin_nugget.json
-8219bafbf5edf65795d22c75807585aa6ab92e3b assets\glories-personal-insurance\models\item\tin_block.json
+a31143ca20f321fd8e7d6b6b1e8ef62f2fe6bab6 assets\glories-personal-insurance\models\item\bronze_ingot.json
 78c1c267d4971e77b696a58e505af98c665eb252 assets\glories-personal-insurance\blockstates\tin_ore.json
+8219bafbf5edf65795d22c75807585aa6ab92e3b assets\glories-personal-insurance\models\item\tin_block.json
+76033b9155388eabf022836ccf3747246e3c8852 assets\glories-personal-insurance\models\item\bronze_block.json
 1376af06a2cd6c43e5813f97197ff600f7349c2e assets\glories-personal-insurance\models\item\tin_ingot.json
+90440f7da803ab78311cdcacacd9b1150fb1234a assets\glories-personal-insurance\models\item\tin_foil.json
 763cd24463304a0d5395f4c8278873f0bb67888f assets\glories-personal-insurance\models\item\raw_tin_block.json
 81b88539d978c01d0071ce8cc286adbc38f5dfec assets\glories-personal-insurance\blockstates\tin_block.json
 c6f3554f16fbebdcb09fb88c2b28fd3f1fb8c480 assets\glories-personal-insurance\models\block\tin_ore.json
+79baf3f059ac772bbc613f75057efd5a5bd338c1 assets\glories-personal-insurance\blockstates\bronze_block.json
 9ce08f8d333c174474f886266343b121401e75b8 assets\glories-personal-insurance\models\item\raw_tin.json

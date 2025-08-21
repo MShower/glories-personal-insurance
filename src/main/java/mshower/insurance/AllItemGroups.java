@@ -27,10 +27,13 @@ public class AllItemGroups {
                             entries.add(AllItems.RAW_TIN);
                             entries.add(AllItems.TIN_INGOT);
                             entries.add(AllItems.TIN_NUGGET);
+                            entries.add(AllItems.TIN_FOIL);
                             entries.add(AllBlocks.TIN_BLOCK);
                             entries.add(AllBlocks.RAW_TIN_BLOCK);
                             entries.add(AllBlocks.TIN_ORE);
                             entries.add(AllBlocks.DEEPSLATE_TIN_ORE);
+                            entries.add(AllItems.BRONZE_INGOT);
+                            entries.add(AllBlocks.BRONZE_BLOCK);
                         }))
                         .build()
         );
