@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "glories-personal-insurance:bronze_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "|",
+    "|"
+  ],
+  "result": {
+    "item": "glories-personal-insurance:bronze_shovel"
+  },
+  "show_notification": true
+}

@@ -34,6 +34,11 @@ public class AllItemGroups {
                             entries.add(AllBlocks.DEEPSLATE_TIN_ORE);
                             entries.add(AllItems.BRONZE_INGOT);
                             entries.add(AllBlocks.BRONZE_BLOCK);
+                            entries.add(AllItems.BRONZE_HOE);
+                            entries.add(AllItems.BRONZE_SHOVEL);
+                            entries.add(AllItems.BRONZE_SWORD);
+                            entries.add(AllItems.BRONZE_AXE);
+                            entries.add(AllItems.BRONZE_PICKAXE);
                         }))
                         .build()
         );

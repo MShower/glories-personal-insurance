@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "glories-personal-insurance:item/bronze_axe"
+  }
+}

@@ -30,5 +30,11 @@ public class ModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(AllItems.TIN_NUGGET, Models.GENERATED);
         itemModelGenerator.register(AllItems.BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(AllItems.TIN_FOIL, Models.GENERATED);
+
+        itemModelGenerator.register(AllItems.BRONZE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.BRONZE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.BRONZE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.BRONZE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.BRONZE_PICKAXE, Models.HANDHELD);
     }
 }

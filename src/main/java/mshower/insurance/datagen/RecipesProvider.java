@@ -56,6 +56,46 @@ replacing the original getRecipeName with two strings to avoid errors caused by 
                 .pattern("$#")
                 .criterion(hasItem(AllItems.TIN_NUGGET), conditionsFromItem(AllItems.TIN_NUGGET))
                 .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_ingot"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_AXE)
+                .input('#', AllItems.BRONZE_INGOT)
+                .input('|', Items.STICK)
+                .pattern("##")
+                .pattern("#|")
+                .pattern(" |")
+                .criterion(hasItem(AllItems.BRONZE_INGOT), conditionsFromItem(AllItems.BRONZE_INGOT))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_HOE)
+                .input('#', AllItems.BRONZE_INGOT)
+                .input('|', Items.STICK)
+                .pattern("##")
+                .pattern("| ")
+                .pattern("| ")
+                .criterion(hasItem(AllItems.BRONZE_INGOT), conditionsFromItem(AllItems.BRONZE_INGOT))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_hoe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_SHOVEL)
+                .input('#', AllItems.BRONZE_INGOT)
+                .input('|', Items.STICK)
+                .pattern("#")
+                .pattern("|")
+                .pattern("|")
+                .criterion(hasItem(AllItems.BRONZE_INGOT), conditionsFromItem(AllItems.BRONZE_INGOT))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_SWORD)
+                .input('#', AllItems.BRONZE_INGOT)
+                .input('|', Items.STICK)
+                .pattern("#")
+                .pattern("#")
+                .pattern("|")
+                .criterion(hasItem(AllItems.BRONZE_INGOT), conditionsFromItem(AllItems.BRONZE_INGOT))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_PICKAXE)
+                .input('#', AllItems.BRONZE_INGOT)
+                .input('|', Items.STICK)
+                .pattern("###")
+                .pattern(" | ")
+                .pattern(" | ")
+                .criterion(hasItem(AllItems.BRONZE_INGOT), conditionsFromItem(AllItems.BRONZE_INGOT))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, "bronze_pickaxe"));
 
         offerSmelting(exporter, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 200, "tin_ingot");
         offerBlasting(exporter, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
