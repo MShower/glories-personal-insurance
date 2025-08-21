@@ -1,5 +1,6 @@
 package mshower.insurance;
 
+import mshower.insurance.world.generation.WorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,5 +24,6 @@ public class GloriesPersonalInsurance implements ModInitializer {
         AllItems.registerItems();
         AllBlocks.registerBlocks();
         AllItemGroups.registerGroups();
+        WorldGeneration.generate();
     }
 }
