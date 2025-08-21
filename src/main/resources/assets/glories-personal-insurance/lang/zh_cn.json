@@ -1,7 +1,10 @@
 {
+    "ItemGroup.insurance_group": "Glorie的人身保险",
+    "block.glories-personal-insurance.deepslate_tin_ore": "深层锡矿石",
+    "block.glories-personal-insurance.raw_tin_block": "粗锡块",
+    "block.glories-personal-insurance.tin_block": "锡块",
+    "block.glories-personal-insurance.tin_ore": "锡矿石",
     "item.glories-personal-insurance.raw_tin": "粗锡",
     "item.glories-personal-insurance.tin_ingot": "锡锭",
-    "item.glories-personal-insurance.tin_nugget": "锡粒",
-    "block.glories-personal-insurance.tin_block": "锡块",
-    "ItemGroup.insurance_group": "Glorie的人身保险"
+    "item.glories-personal-insurance.tin_nugget": "锡粒"
 }

@@ -1,0 +1,10 @@
+{
+  "ItemGroup.insurance_group": "Glorie's Personal Insurance",
+  "block.glories-personal-insurance.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.glories-personal-insurance.raw_tin_block": "Raw Tin Block",
+  "block.glories-personal-insurance.tin_block": "Tin Block",
+  "block.glories-personal-insurance.tin_ore": "Raw Tin Ore",
+  "item.glories-personal-insurance.raw_tin": "Raw Tin",
+  "item.glories-personal-insurance.tin_ingot": "Tin Ingot",
+  "item.glories-personal-insurance.tin_nugget": "Tin Nugget"
+}

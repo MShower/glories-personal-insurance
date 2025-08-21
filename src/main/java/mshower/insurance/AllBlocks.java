@@ -12,6 +12,9 @@ import net.minecraft.util.Identifier;
 public class AllBlocks {
 
     public static final Block TIN_BLOCK = register("tin_block", new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+    public static final Block RAW_TIN_BLOCK = register("raw_tin_block", new Block(AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final Block TIN_ORE = register("tin_ore", new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE)));
+    public static final Block DEEPSLATE_TIN_ORE = register("deepslate_tin_ore", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)));
 
     public static Block register(String id, Block block) {
         registerAll(id, block);

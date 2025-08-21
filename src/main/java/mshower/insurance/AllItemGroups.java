@@ -28,6 +28,9 @@ public class AllItemGroups {
                             entries.add(AllItems.TIN_INGOT);
                             entries.add(AllItems.TIN_NUGGET);
                             entries.add(AllBlocks.TIN_BLOCK);
+                            entries.add(AllBlocks.RAW_TIN_BLOCK);
+                            entries.add(AllBlocks.TIN_ORE);
+                            entries.add(AllBlocks.DEEPSLATE_TIN_ORE);
                         }))
                         .build()
         );
