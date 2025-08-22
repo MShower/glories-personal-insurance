@@ -39,6 +39,10 @@ public class AllItemGroups {
                             entries.add(AllItems.BRONZE_SWORD);
                             entries.add(AllItems.BRONZE_AXE);
                             entries.add(AllItems.BRONZE_PICKAXE);
+                            entries.add(AllItems.BRONZE_HELMET);
+                            entries.add(AllItems.BRONZE_CHESTPLATE);
+                            entries.add(AllItems.BRONZE_LEGGINGS);
+                            entries.add(AllItems.BRONZE_BOOTS);
                         }))
                         .build()
         );

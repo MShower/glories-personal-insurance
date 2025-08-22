@@ -1,5 +1,6 @@
 package mshower.insurance;
 
+import mshower.insurance.utils.ArmorMaterials;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,6 +21,11 @@ public class AllItems {
     public static final Item BRONZE_PICKAXE = registerItem("bronze_pickaxe", new PickaxeItem(BRONZE, 1, -2.8F, new Item.Settings()));
     public static final Item BRONZE_AXE = registerItem("bronze_axe", new AxeItem(BRONZE, 6.0F, -3.1F, new Item.Settings()));
     public static final Item BRONZE_HOE = registerItem("bronze_hoe", new HoeItem(BRONZE, -2, -1.0F, new Item.Settings()));
+    public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+    public static final Item BRONZE_BOOTS = registerItem("bronze_boots", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Settings()));
+
 
     public static Item registerItem(String id, Item item) {
         return register(new Identifier(GloriesPersonalInsurance.MOD_ID, id), item);

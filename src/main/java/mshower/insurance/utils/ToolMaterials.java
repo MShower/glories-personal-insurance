@@ -10,7 +10,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ToolMaterials implements ToolMaterial {
-    BRONZE(4, 250, 6.0F, 2.0F, 14, () -> Ingredient.ofItems(AllItems.BRONZE_INGOT));
+    BRONZE(4, 300, 6.5F, 2.5F, 14, () -> Ingredient.ofItems(AllItems.BRONZE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

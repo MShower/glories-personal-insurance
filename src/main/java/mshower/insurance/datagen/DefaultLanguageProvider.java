@@ -1,5 +1,6 @@
 package mshower.insurance.datagen;
 
+import com.mojang.datafixers.TypeRewriteRule;
 import mshower.insurance.AllBlocks;
 import mshower.insurance.AllItemGroups;
 import mshower.insurance.AllItems;
@@ -24,6 +25,11 @@ public class DefaultLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(AllItems.BRONZE_HOE, "Bronze Hoe");
         translationBuilder.add(AllItems.BRONZE_PICKAXE, "Bronze Pickaxe");
         translationBuilder.add(AllItems.BRONZE_SHOVEL, "Bronze Shovel");
+
+        translationBuilder.add(AllItems.BRONZE_HELMET, "Bronze Helmet");
+        translationBuilder.add(AllItems.BRONZE_CHESTPLATE, "Bronze Chestplate");
+        translationBuilder.add(AllItems.BRONZE_LEGGINGS, "Bronze Leggings");
+        translationBuilder.add(AllItems.BRONZE_BOOTS, "Bronze Boots");
 
         translationBuilder.add(AllBlocks.TIN_BLOCK, "Tin Block");
         translationBuilder.add(AllBlocks.RAW_TIN_BLOCK, "Raw Tin Block");

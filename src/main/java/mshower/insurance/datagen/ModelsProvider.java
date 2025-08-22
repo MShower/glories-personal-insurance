@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModelsProvider extends FabricModelProvider {
     public ModelsProvider(FabricDataOutput output) {
@@ -36,5 +37,10 @@ public class ModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(AllItems.BRONZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_AXE, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_PICKAXE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_BOOTS);
     }
 }
