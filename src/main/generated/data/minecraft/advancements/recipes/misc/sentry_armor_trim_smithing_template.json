@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_tin_ore": {
+    "has_sentry_armor_trim_smithing_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "glories-personal-insurance:deepslate_tin_ore"
+              "minecraft:sentry_armor_trim_smithing_template"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tin_ingot_from_blasting_deepslate_tin_ore"
+        "recipe": "minecraft:sentry_armor_trim_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate_tin_ore",
+      "has_sentry_armor_trim_smithing_template",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tin_ingot_from_blasting_deepslate_tin_ore"
+      "minecraft:sentry_armor_trim_smithing_template"
     ]
   },
   "sends_telemetry_event": false

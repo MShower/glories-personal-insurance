@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tin_ingot_from_blasting_raw_tin"
+        "recipe": "glories-personal-insurance:tin_ingot_from_blasting_raw_tin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tin_ingot_from_blasting_raw_tin"
+      "glories-personal-insurance:tin_ingot_from_blasting_raw_tin"
     ]
   },
   "sends_telemetry_event": false

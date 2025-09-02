@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bronze_ingot"
+        "recipe": "glories-personal-insurance:bronze_block_to_bronze_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bronze_ingot"
+      "glories-personal-insurance:bronze_block_to_bronze_ingot"
     ]
   },
   "sends_telemetry_event": false

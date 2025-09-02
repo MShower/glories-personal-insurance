@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tin_ingot_from_smelting_tin_ore"
+        "recipe": "glories-personal-insurance:tin_ingot_to_tin_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tin_ore": {
+    "has_tin_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "glories-personal-insurance:tin_ore"
+              "glories-personal-insurance:tin_ingot"
             ]
           }
         ]
@@ -22,13 +22,13 @@
   },
   "requirements": [
     [
-      "has_tin_ore",
+      "has_tin_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tin_ingot_from_smelting_tin_ore"
+      "glories-personal-insurance:tin_ingot_to_tin_nugget"
     ]
   },
   "sends_telemetry_event": false

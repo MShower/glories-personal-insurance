@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tin_ingot_to_tin_block"
+        "recipe": "minecraft:vex_armor_trim_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tin_ingot": {
+    "has_vex_armor_trim_smithing_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "glories-personal-insurance:tin_ingot"
+              "minecraft:vex_armor_trim_smithing_template"
             ]
           }
         ]
@@ -22,13 +22,13 @@
   },
   "requirements": [
     [
-      "has_tin_ingot",
+      "has_vex_armor_trim_smithing_template",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tin_ingot_to_tin_block"
+      "minecraft:vex_armor_trim_smithing_template"
     ]
   },
   "sends_telemetry_event": false
