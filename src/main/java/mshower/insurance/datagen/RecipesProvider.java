@@ -112,11 +112,12 @@ public class RecipesProvider extends RecipeProvider {
     public static void offerHamdraxRecipes(
             Consumer<RecipeJsonProvider> exporter,
             ItemConvertible hamdrax,
-            ItemConvertible resource
+            ItemConvertible resource,
+            ItemConvertible stick
     ) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, hamdrax)
                 .input('#', resource)
-                .input('|', Items.STICK)
+                .input('|', stick)
                 .pattern("###")
                 .pattern("#| ")
                 .pattern(" | ")
@@ -183,6 +184,7 @@ public class RecipesProvider extends RecipeProvider {
 
         offerOwnSmeltingOrBlasting(exporter, true, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 200, "tin_ingot");
         offerOwnSmeltingOrBlasting(exporter, false, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
+        offerOwnSmeltingOrBlasting(exporter, false, List.of(Items.ANCIENT_DEBRIS, Items.NETHERITE_SCRAP), RecipeCategory.MISC, AllItems.SANCTIFIED_STICK, 0.7f, 100, "sanctified_stick");
         offerOwnSmeltingOrBlasting(exporter, false, List.of(AllItems.BRONZE_INGOT), RecipeCategory.MISC, AllItems.HALLOWED_BRONZE_INGOT, 0.7f, 100, "hallowed_bronze_ingot");
 
         offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERRACK);
@@ -203,7 +205,7 @@ public class RecipesProvider extends RecipeProvider {
         offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
         offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.MOSSY_COBBLESTONE);
 
-        offerHamdraxRecipes(exporter, AllItems.HAMDRAX, AllBlocks.BRONZE_BLOCK);
-        offerHamdraxRecipes(exporter, AllItems.HALLOWED_HAMDRAX, AllBlocks.HALLOWED_BRONZE_BLOCK);
+        offerHamdraxRecipes(exporter, AllItems.HAMDRAX, AllBlocks.BRONZE_BLOCK, Items.STICK);
+        offerHamdraxRecipes(exporter, AllItems.HALLOWED_HAMDRAX, AllBlocks.HALLOWED_BRONZE_BLOCK, AllItems.SANCTIFIED_STICK);
     }
 }

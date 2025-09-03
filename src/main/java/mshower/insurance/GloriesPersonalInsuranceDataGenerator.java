@@ -1,8 +1,8 @@
 package mshower.insurance;
 
 import mshower.insurance.datagen.*;
-import mshower.insurance.world.ConfiguredFeatures;
-import mshower.insurance.world.PlacedFeatures;
+import mshower.insurance.utils.world.ConfiguredFeatures;
+import mshower.insurance.utils.world.PlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;

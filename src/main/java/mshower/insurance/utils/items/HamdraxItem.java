@@ -1,13 +1,10 @@
-package mshower.insurance.utils;
+package mshower.insurance.utils.items;
 
 import mshower.insurance.AllTags;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.registry.tag.TagKey;
 
 public class HamdraxItem extends AxeItem {
     public HamdraxItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {

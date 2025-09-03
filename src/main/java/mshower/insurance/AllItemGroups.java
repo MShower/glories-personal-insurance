@@ -16,7 +16,7 @@ public class AllItemGroups {
         return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(GloriesPersonalInsurance.MOD_ID, id));
     }
 
-    public static void registerGroups() {
+    public static void register() {
         Registry.register(
                 Registries.ITEM_GROUP,
                 INSURANCE_GROUP,
@@ -27,7 +27,6 @@ public class AllItemGroups {
                             entries.add(AllItems.RAW_TIN);
                             entries.add(AllItems.TIN_INGOT);
                             entries.add(AllItems.TIN_NUGGET);
-                            entries.add(AllItems.TIN_FOIL);
                             entries.add(AllBlocks.TIN_BLOCK);
                             entries.add(AllBlocks.RAW_TIN_BLOCK);
                             entries.add(AllBlocks.TIN_ORE);

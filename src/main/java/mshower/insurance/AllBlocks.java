@@ -28,7 +28,7 @@ public class AllBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
-    public static void registerBlocks() {
+    public static void register() {
 
     }
 }

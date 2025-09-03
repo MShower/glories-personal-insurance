@@ -1,6 +1,5 @@
 package mshower.insurance.datagen;
 
-import com.mojang.datafixers.TypeRewriteRule;
 import mshower.insurance.AllBlocks;
 import mshower.insurance.AllTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

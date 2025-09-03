@@ -1,8 +1,7 @@
 package mshower.insurance;
 
-import mshower.insurance.world.generation.WorldGeneration;
+import mshower.insurance.utils.world.generation.WorldGeneration;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,9 +20,9 @@ public class GloriesPersonalInsurance implements ModInitializer {
         // Proceed with mild caution.
 
         LOGGER.info("I just bought new insurance.");
-        AllItems.registerItems();
-        AllBlocks.registerBlocks();
-        AllItemGroups.registerGroups();
+        AllItems.register();
+        AllBlocks.register();
+        AllItemGroups.register();
         WorldGeneration.generate();
     }
 }

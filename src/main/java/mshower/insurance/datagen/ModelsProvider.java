@@ -1,6 +1,5 @@
 package mshower.insurance.datagen;
 
-import com.mojang.datafixers.TypeRewriteRule;
 import mshower.insurance.AllBlocks;
 import mshower.insurance.AllItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -31,7 +30,6 @@ public class ModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(AllItems.RAW_TIN, Models.GENERATED);
         itemModelGenerator.register(AllItems.TIN_NUGGET, Models.GENERATED);
         itemModelGenerator.register(AllItems.BRONZE_INGOT, Models.GENERATED);
-        itemModelGenerator.register(AllItems.TIN_FOIL, Models.GENERATED);
         itemModelGenerator.register(AllItems.HALLOWED_BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(AllItems.SANCTIFIED_DUST, Models.GENERATED);
 

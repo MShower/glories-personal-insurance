@@ -1,7 +1,6 @@
-package mshower.insurance.world.generation;
+package mshower.insurance.utils.world.generation;
 
-import mshower.insurance.world.PlacedFeatures;
-import net.fabricmc.fabric.api.biome.v1.BiomeModification;
+import mshower.insurance.utils.world.PlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;

@@ -1,4 +1,4 @@
-package mshower.insurance.world;
+package mshower.insurance.utils.world;
 
 import net.minecraft.world.gen.placementmodifier.*;
 

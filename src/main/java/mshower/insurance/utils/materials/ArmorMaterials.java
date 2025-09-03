@@ -1,4 +1,4 @@
-package mshower.insurance.utils;
+package mshower.insurance.utils.materials;
 
 import mshower.insurance.AllItems;
 import mshower.insurance.GloriesPersonalInsurance;
@@ -7,8 +7,8 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Util;
 import net.minecraft.util.StringIdentifiable;
+import net.minecraft.util.Util;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;

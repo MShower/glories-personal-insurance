@@ -1,4 +1,4 @@
-package mshower.insurance.world;
+package mshower.insurance.utils.world;
 
 import mshower.insurance.GloriesPersonalInsurance;
 import net.minecraft.registry.Registerable;

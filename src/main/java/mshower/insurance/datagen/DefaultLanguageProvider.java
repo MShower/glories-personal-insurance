@@ -1,6 +1,5 @@
 package mshower.insurance.datagen;
 
-import com.mojang.datafixers.TypeRewriteRule;
 import mshower.insurance.AllBlocks;
 import mshower.insurance.AllItemGroups;
 import mshower.insurance.AllItems;
@@ -17,7 +16,6 @@ public class DefaultLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(AllItems.RAW_TIN, "Raw Tin");
         translationBuilder.add(AllItems.TIN_INGOT, "Tin Ingot");
         translationBuilder.add(AllItems.TIN_NUGGET, "Tin Nugget");
-        translationBuilder.add(AllItems.TIN_FOIL, "Tin Foil");
         translationBuilder.add(AllItems.BRONZE_INGOT, "Bronze Ingot");
 
         translationBuilder.add(AllItems.BRONZE_SWORD, "Bronze Sword");

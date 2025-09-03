@@ -2,6 +2,7 @@
     "ItemGroup.insurance_group": "Glorie的人身保险",
     "block.glories-personal-insurance.bronze_block": "青铜块",
     "block.glories-personal-insurance.deepslate_tin_ore": "深层锡矿石",
+    "block.glories-personal-insurance.hallowed_bronze_block": "神圣青铜块",
     "block.glories-personal-insurance.raw_tin_block": "粗锡块",
     "block.glories-personal-insurance.tin_block": "锡块",
     "block.glories-personal-insurance.tin_ore": "锡矿石",
@@ -15,8 +16,11 @@
     "item.glories-personal-insurance.bronze_pickaxe": "青铜镐",
     "item.glories-personal-insurance.bronze_shovel": "青铜锹",
     "item.glories-personal-insurance.bronze_sword": "青铜剑",
+    "item.glories-personal-insurance.hallowed_bronze_ingot": "神圣青铜锭",
+    "item.glories-personal-insurance.hallowed_hamdrax": "圣化锤斧",
+    "item.glories-personal-insurance.hamdrax": "锤斧",
     "item.glories-personal-insurance.raw_tin": "粗锡",
-    "item.glories-personal-insurance.tin_foil": "锡箔",
+    "item.glories-personal-insurance.sanctified_dust": "纯洁晶粉",
     "item.glories-personal-insurance.tin_ingot": "锡锭",
     "item.glories-personal-insurance.tin_nugget": "锡粒"
 }

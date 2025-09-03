@@ -1,22 +1,21 @@
 package mshower.insurance;
 
-import mshower.insurance.utils.ArmorMaterials;
-import mshower.insurance.utils.HamdraxItem;
+import mshower.insurance.utils.items.HamdraxItem;
+import mshower.insurance.utils.materials.ArmorMaterials;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
-import static mshower.insurance.utils.ToolMaterials.BRONZE;
-import static mshower.insurance.utils.ToolMaterials.HALLOWED_BRONZE;
+import static mshower.insurance.utils.materials.ToolMaterials.BRONZE;
+import static mshower.insurance.utils.materials.ToolMaterials.HALLOWED_BRONZE;
 
 public class AllItems {
 
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new Item.Settings()));
-    public static final Item TIN_FOIL = registerItem("tin_foil", new Item(new Item.Settings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
     public static final Item BRONZE_SWORD = registerItem("bronze_sword", new SwordItem(BRONZE, 3, -2.4F, new Item.Settings()));
     public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel", new ShovelItem(BRONZE, 1.5F, -3.0F, new Item.Settings()));
@@ -31,6 +30,7 @@ public class AllItems {
     public static final Item HALLOWED_HAMDRAX = registerItem("hallowed_hamdrax", new HamdraxItem(HALLOWED_BRONZE, 6.0F, -3F, new Item.Settings()));
     public static final Item SANCTIFIED_DUST = registerItem("sanctified_dust", new Item(new Item.Settings()));
     public static final Item HALLOWED_BRONZE_INGOT = registerItem("hallowed_bronze_ingot", new Item(new Item.Settings()));
+    public static final Item SANCTIFIED_STICK = registerItem("sanctified_stick", new Item(new Item.Settings()));
 
 
     public static Item registerItem(String id, Item item) {
@@ -49,7 +49,7 @@ public class AllItems {
         return Registry.register(Registries.ITEM, key, item);
     }
 
-    public static void registerItems() {
+    public static void register() {
 
     }
 }
