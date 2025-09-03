@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "hallowed_bronze_ingot",
+  "ingredient": {
+    "item": "glories-personal-insurance:bronze_ingot"
+  },
+  "result": "glories-personal-insurance:hallowed_bronze_ingot"
+}

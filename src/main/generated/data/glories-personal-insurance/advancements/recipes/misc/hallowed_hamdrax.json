@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hallowed_bronze_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "glories-personal-insurance:hallowed_bronze_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "glories-personal-insurance:hallowed_hamdrax"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_hallowed_bronze_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "glories-personal-insurance:hallowed_hamdrax"
+    ]
+  },
+  "sends_telemetry_event": false
+}

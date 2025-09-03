@@ -22,6 +22,7 @@ public class ModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(AllBlocks.TIN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(AllBlocks.DEEPSLATE_TIN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(AllBlocks.BRONZE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(AllBlocks.HALLOWED_BRONZE_BLOCK);
     }
 
     @Override
@@ -31,12 +32,16 @@ public class ModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(AllItems.TIN_NUGGET, Models.GENERATED);
         itemModelGenerator.register(AllItems.BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(AllItems.TIN_FOIL, Models.GENERATED);
+        itemModelGenerator.register(AllItems.HALLOWED_BRONZE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AllItems.SANCTIFIED_DUST, Models.GENERATED);
 
         itemModelGenerator.register(AllItems.BRONZE_HOE, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_AXE, Models.HANDHELD);
         itemModelGenerator.register(AllItems.BRONZE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.HAMDRAX, Models.HANDHELD);
+        itemModelGenerator.register(AllItems.HALLOWED_HAMDRAX, Models.HANDHELD);
 
         itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) AllItems.BRONZE_CHESTPLATE);

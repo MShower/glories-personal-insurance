@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "glories-personal-insurance:hallowed_bronze_block"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "#| ",
+    " | "
+  ],
+  "result": {
+    "item": "glories-personal-insurance:hallowed_hamdrax"
+  },
+  "show_notification": true
+}

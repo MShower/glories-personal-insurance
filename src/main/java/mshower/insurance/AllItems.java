@@ -1,6 +1,7 @@
 package mshower.insurance;
 
 import mshower.insurance.utils.ArmorMaterials;
+import mshower.insurance.utils.HamdraxItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -8,6 +9,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 import static mshower.insurance.utils.ToolMaterials.BRONZE;
+import static mshower.insurance.utils.ToolMaterials.HALLOWED_BRONZE;
 
 public class AllItems {
 
@@ -25,6 +27,10 @@ public class AllItems {
     public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item BRONZE_BOOTS = registerItem("bronze_boots", new ArmorItem(ArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Settings()));
+    public static final Item HAMDRAX = registerItem("hamdrax", new HamdraxItem(BRONZE, 6.0F, -3F, new Item.Settings()));
+    public static final Item HALLOWED_HAMDRAX = registerItem("hallowed_hamdrax", new HamdraxItem(HALLOWED_BRONZE, 6.0F, -3F, new Item.Settings()));
+    public static final Item SANCTIFIED_DUST = registerItem("sanctified_dust", new Item(new Item.Settings()));
+    public static final Item HALLOWED_BRONZE_INGOT = registerItem("hallowed_bronze_ingot", new Item(new Item.Settings()));
 
 
     public static Item registerItem(String id, Item item) {

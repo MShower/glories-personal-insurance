@@ -1,4 +1,6 @@
-// 1.20.1	2025-09-02T22:43:57.1072982	Glorie's Personal Insurance/Tags for minecraft:block
-e5a29a6ede72d6455bcabb7d64ae5660995ee039 data\minecraft\tags\blocks\needs_stone_tool.json
+// 1.20.1	2025-09-03T10:17:04.9912404	Glorie's Personal Insurance/Tags for minecraft:block
+6958c2b1371fe782d8482cd8959c7cb4820339ae data\glories-personal-insurance\tags\blocks\hamdrax_mineable.json
 65913a5dd175ac9e46eddb7fd265925effe4829a data\minecraft\tags\blocks\needs_iron_tool.json
 84858ea05d36e63ee056c574138bab476a87a73f data\minecraft\tags\blocks\mineable\pickaxe.json
+e5a29a6ede72d6455bcabb7d64ae5660995ee039 data\minecraft\tags\blocks\needs_stone_tool.json
+7e37e081a8b2fb37a20e7825c2b69b8432d7e82d data\minecraft\tags\blocks\needs_diamond_tool.json

@@ -43,6 +43,11 @@ public class AllItemGroups {
                             entries.add(AllItems.BRONZE_CHESTPLATE);
                             entries.add(AllItems.BRONZE_LEGGINGS);
                             entries.add(AllItems.BRONZE_BOOTS);
+                            entries.add(AllItems.HAMDRAX);
+                            entries.add(AllItems.HALLOWED_HAMDRAX);
+                            entries.add(AllItems.HALLOWED_BRONZE_INGOT);
+                            entries.add(AllItems.SANCTIFIED_DUST);
+                            entries.add(AllBlocks.HALLOWED_BRONZE_BLOCK);
                         }))
                         .build()
         );

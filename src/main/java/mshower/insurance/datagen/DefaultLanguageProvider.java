@@ -36,8 +36,12 @@ public class DefaultLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(AllBlocks.TIN_ORE, "Raw Tin Ore");
         translationBuilder.add(AllBlocks.DEEPSLATE_TIN_ORE, "Deepslate Tin Ore");
         translationBuilder.add(AllBlocks.BRONZE_BLOCK, "Bronze Block");
+        translationBuilder.add(AllBlocks.HALLOWED_BRONZE_BLOCK, "Hallowed Bronze Block");
 
-
+        translationBuilder.add(AllItems.HALLOWED_BRONZE_INGOT, "Hallowed Bronze Ingot");
+        translationBuilder.add(AllItems.HAMDRAX, "Hamdrax");
+        translationBuilder.add(AllItems.HALLOWED_HAMDRAX, "Hallowed Hamdrax");
+        translationBuilder.add(AllItems.SANCTIFIED_DUST, "Sanctified Dust");
 
         translationBuilder.add(AllItemGroups.INSURANCE_GROUP, "Glorie's Personal Insurance");
     }

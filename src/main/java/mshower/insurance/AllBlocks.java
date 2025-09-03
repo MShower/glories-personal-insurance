@@ -16,6 +16,7 @@ public class AllBlocks {
     public static final Block TIN_ORE = register("tin_ore", new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE)));
     public static final Block DEEPSLATE_TIN_ORE = register("deepslate_tin_ore", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)));
     public static final Block BRONZE_BLOCK = register("bronze_block", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_BLOCK)));
+    public static final Block HALLOWED_BRONZE_BLOCK = register("hallowed_bronze_block", new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK)));
 
     public static Block register(String id, Block block) {
         registerAll(id, block);

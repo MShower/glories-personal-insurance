@@ -24,7 +24,7 @@ public class RecipesProvider extends RecipeProvider {
     }
     public static final List<ItemConvertible> TIN_INGOT = List.of(AllBlocks.TIN_ORE, AllBlocks.DEEPSLATE_TIN_ORE, AllItems.RAW_TIN);
 
-    public static void offerVanillaEasierSmithingTemplateCopyingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible template, ItemConvertible resource) {
+    public static void offerVanillaEasierSmithingTemplateCopyingRecipes(Consumer<RecipeJsonProvider> exporter, ItemConvertible template, ItemConvertible resource) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, template, 2)
                 .input('#', resource)
                 .input('C', Items.DIAMOND)
@@ -57,7 +57,7 @@ public class RecipesProvider extends RecipeProvider {
 
     public static void offerOwnSmeltingOrBlasting(
             Consumer<RecipeJsonProvider> exporter,
-            Boolean ifSmelting,
+            Boolean isSmelting,
             List<ItemConvertible> inputs,
             RecipeCategory category,
             ItemConvertible output,
@@ -65,7 +65,7 @@ public class RecipesProvider extends RecipeProvider {
             int cookingTime,
             String group
     ) {
-        if (ifSmelting == true) {
+        if (isSmelting == true) {
             offerOwnMultipleOptions(exporter, RecipeSerializer.SMELTING, inputs, category, output, experience, cookingTime, group, "_from_smelting");
         } else {
             offerOwnMultipleOptions(exporter, RecipeSerializer.BLASTING, inputs, category, output, experience, cookingTime, group, "_from_blasting");
@@ -109,6 +109,20 @@ public class RecipesProvider extends RecipeProvider {
                 exporter, reverseCategory, baseItem, compactingCategory, compactItem, craftCompactRecipeItem, null, craftBaseRecipeName, null
         );
     }
+    public static void offerHamdraxRecipes(
+            Consumer<RecipeJsonProvider> exporter,
+            ItemConvertible hamdrax,
+            ItemConvertible resource
+    ) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, hamdrax)
+                .input('#', resource)
+                .input('|', Items.STICK)
+                .pattern("###")
+                .pattern("#| ")
+                .pattern(" | ")
+                .criterion(hasItem(resource), conditionsFromItem(resource))
+                .offerTo(exporter, new Identifier(GloriesPersonalInsurance.MOD_ID, hamdrax.toString()));
+    }
 
     @Override
 
@@ -117,6 +131,8 @@ public class RecipesProvider extends RecipeProvider {
         offerOwnReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AllItems.RAW_TIN, RecipeCategory.BUILDING_BLOCKS, AllBlocks.RAW_TIN_BLOCK, "raw_tin", "raw_tin_block");
         offerOwnReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AllItems.TIN_NUGGET, RecipeCategory.MISC, AllItems.TIN_INGOT,"tin_ingot_to_tin_nugget","tin_nugger_to_tin_ingot");
         offerOwnReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AllItems.BRONZE_INGOT, RecipeCategory.BUILDING_BLOCKS, AllBlocks.BRONZE_BLOCK, "bronze_block_to_bronze_ingot", "bronze_ingot_to_bronze_block");
+        offerOwnReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AllItems.HALLOWED_BRONZE_INGOT, RecipeCategory.BUILDING_BLOCKS, AllBlocks.HALLOWED_BRONZE_BLOCK, "hallowed_bronze_block_to_hallowed_bronze_ingot", "hallowed_bronze_ingot_to_hallowed_bronze_block");
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AllItems.BRONZE_INGOT, 2)
                 .input('#', AllItems.TIN_NUGGET)
                 .input('$', Items.COPPER_INGOT)
@@ -167,23 +183,27 @@ public class RecipesProvider extends RecipeProvider {
 
         offerOwnSmeltingOrBlasting(exporter, true, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 200, "tin_ingot");
         offerOwnSmeltingOrBlasting(exporter, false, TIN_INGOT, RecipeCategory.MISC, AllItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
+        offerOwnSmeltingOrBlasting(exporter, false, List.of(AllItems.BRONZE_INGOT), RecipeCategory.MISC, AllItems.HALLOWED_BRONZE_INGOT, 0.7f, 100, "hallowed_bronze_ingot");
 
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERRACK);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.COAST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.DUNE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SANDSTONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.EYE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.END_STONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.RIB_ARMOR_TRIM_SMITHING_TEMPLATE, Items.NETHERRACK);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLED_DEEPSLATE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE, Items.BLACKSTONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.PURPUR_PILLAR);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.PRISMARINE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.VEX_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.WARD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLED_DEEPSLATE);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
-        offerVanillaEasierSmithingTemplateCopyingRecipe(exporter, Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.MOSSY_COBBLESTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERRACK);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.COAST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.DUNE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SANDSTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.EYE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.END_STONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.RIB_ARMOR_TRIM_SMITHING_TEMPLATE, Items.NETHERRACK);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLED_DEEPSLATE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE, Items.BLACKSTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.PURPUR_PILLAR);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.PRISMARINE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.VEX_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLESTONE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.WARD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COBBLED_DEEPSLATE);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TERRACOTTA);
+        offerVanillaEasierSmithingTemplateCopyingRecipes(exporter, Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.MOSSY_COBBLESTONE);
+
+        offerHamdraxRecipes(exporter, AllItems.HAMDRAX, AllBlocks.BRONZE_BLOCK);
+        offerHamdraxRecipes(exporter, AllItems.HALLOWED_HAMDRAX, AllBlocks.HALLOWED_BRONZE_BLOCK);
     }
 }
